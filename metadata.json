@@ -1,0 +1,6 @@
+{
+  "name": "Midlink Dashboard",
+  "description": "Professional medical dashboard for doctors with patient profiles, medical records, AI summaries, and real-time alerts.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["AI Diagnostic Assistance", "Real-time Patient Monitoring", "Medical Record Management"]
+}

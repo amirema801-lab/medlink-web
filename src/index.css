@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[#f4f7fa] text-[#1a202c] font-sans antialiased;
+  }
+}
+
+@layer components {
+  .bento-grid {
+    @apply grid gap-4 p-4;
+  }
+
+  .bento-card {
+    @apply bg-white border border-[#e2e8f0] rounded-xl shadow-[0_1px_3px_rgba(0,0,0,0.05)] p-4 flex flex-col transition-all;
+  }
+
+  .bento-card-title {
+    @apply text-[11px] font-bold uppercase tracking-wider text-[#718096] mb-3 flex items-center gap-2;
+  }
+
+  .bento-chip {
+    @apply inline-flex items-center px-2 py-1 bg-[#edf2f7] text-[#4a5568] rounded text-xs font-medium;
+  }
+
+  /* Specific Bento Card Types */
+  .ai-summary-card {
+    @apply bg-[#f0f7ff] border-[#bfdbfe];
+  }
+
+  .emergency-alert-card {
+    @apply bg-[#fff5f5] border-[#feb2b2] text-[#c53030];
+  }
+}
+
+
